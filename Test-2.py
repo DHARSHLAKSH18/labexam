@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template_string
-import cx_Oracle
+from oracledb import cx_Oracle
 
 app = Flask(__name__)
 
@@ -144,3 +144,5 @@ def signup():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
